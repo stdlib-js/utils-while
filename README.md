@@ -151,6 +151,16 @@ whilst( predicate, log );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/do-until`][@stdlib/utils/do-until]: invoke a function until a test condition is true.
+-   [`@stdlib/utils/do-while`][@stdlib/utils/do-while]: invoke a function while a test condition is true.
+-   [`@stdlib/utils/until`][@stdlib/utils/until]: invoke a function until a test condition is true.
+-   [`@stdlib/utils/async/while`][@stdlib/utils/async/while]: invoke a function while a test condition is true.
+-   [`@stdlib/utils/while-each`][@stdlib/utils/while-each]: while a test condition is true, invoke a function for each element in a collection.
+
 </section>
 
 <!-- /.related -->
@@ -211,6 +221,20 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-while/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/utils/do-until]: https://github.com/stdlib-js/utils-do-until
+
+[@stdlib/utils/do-while]: https://github.com/stdlib-js/utils-do-while
+
+[@stdlib/utils/until]: https://github.com/stdlib-js/utils-until
+
+[@stdlib/utils/async/while]: https://github.com/stdlib-js/utils-async-while
+
+[@stdlib/utils/while-each]: https://github.com/stdlib-js/utils-while-each
+
+<!-- </related-links> -->
 
 </section>
 
