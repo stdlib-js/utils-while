@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-while
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-whilst = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-while@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var whilst = require( 'path/to/vendor/umd/utils-while/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-while@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.whilst;
-})();
-</script>
+var whilst = require( '@stdlib/utils-while' );
 ```
 
 #### whilst( predicate, fcn\[, thisArg ] )
@@ -136,14 +128,9 @@ console.log( context.count );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-while@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var whilst = require( '@stdlib/utils-while' );
 
 function predicate() {
     return ( randu() > 0.05 );
@@ -154,11 +141,6 @@ function log( i ) {
 }
 
 whilst( predicate, log );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -181,11 +163,11 @@ whilst( predicate, log );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/do-until`][@stdlib/utils/do-until]</span><span class="delimiter">: </span><span class="description">invoke a function until a test condition is true.</span>
--   <span class="package-name">[`@stdlib/utils/do-while`][@stdlib/utils/do-while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
--   <span class="package-name">[`@stdlib/utils/until`][@stdlib/utils/until]</span><span class="delimiter">: </span><span class="description">invoke a function until a test condition is true.</span>
--   <span class="package-name">[`@stdlib/utils/async/while`][@stdlib/utils/async/while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
--   <span class="package-name">[`@stdlib/utils/while-each`][@stdlib/utils/while-each]</span><span class="delimiter">: </span><span class="description">while a test condition is true, invoke a function for each element in a collection.</span>
+-   <span class="package-name">[`@stdlib/utils-do-until`][@stdlib/utils/do-until]</span><span class="delimiter">: </span><span class="description">invoke a function until a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils-do-while`][@stdlib/utils/do-while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils-until`][@stdlib/utils/until]</span><span class="delimiter">: </span><span class="description">invoke a function until a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils-async/while`][@stdlib/utils/async/while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils-while-each`][@stdlib/utils/while-each]</span><span class="delimiter">: </span><span class="description">while a test condition is true, invoke a function for each element in a collection.</span>
 
 </section>
 
@@ -262,15 +244,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/do-until]: https://github.com/stdlib-js/utils-do-until/tree/umd
+[@stdlib/utils/do-until]: https://github.com/stdlib-js/utils-do-until
 
-[@stdlib/utils/do-while]: https://github.com/stdlib-js/utils-do-while/tree/umd
+[@stdlib/utils/do-while]: https://github.com/stdlib-js/utils-do-while
 
-[@stdlib/utils/until]: https://github.com/stdlib-js/utils-until/tree/umd
+[@stdlib/utils/until]: https://github.com/stdlib-js/utils-until
 
-[@stdlib/utils/async/while]: https://github.com/stdlib-js/utils-async-while/tree/umd
+[@stdlib/utils/async/while]: https://github.com/stdlib-js/utils-async-while
 
-[@stdlib/utils/while-each]: https://github.com/stdlib-js/utils-while-each/tree/umd
+[@stdlib/utils/while-each]: https://github.com/stdlib-js/utils-while-each
 
 <!-- </related-links> -->
 
