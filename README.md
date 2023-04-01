@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-while
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-whilst = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-while@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var whilst = require( 'path/to/vendor/umd/utils-while/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-while@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.whilst;
-})();
-</script>
+var whilst = require( '@stdlib/utils-while' );
 ```
 
 #### whilst( predicate, fcn\[, thisArg ] )
@@ -136,14 +128,9 @@ console.log( context.count );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-while@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var whilst = require( '@stdlib/utils-while' );
 
 function predicate() {
     return ( randu() > 0.05 );
@@ -154,11 +141,6 @@ function log( i ) {
 }
 
 whilst( predicate, log );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -244,7 +226,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -262,15 +244,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/do-until]: https://github.com/stdlib-js/utils-do-until/tree/umd
+[@stdlib/utils/do-until]: https://github.com/stdlib-js/utils-do-until
 
-[@stdlib/utils/do-while]: https://github.com/stdlib-js/utils-do-while/tree/umd
+[@stdlib/utils/do-while]: https://github.com/stdlib-js/utils-do-while
 
-[@stdlib/utils/until]: https://github.com/stdlib-js/utils-until/tree/umd
+[@stdlib/utils/until]: https://github.com/stdlib-js/utils-until
 
-[@stdlib/utils/async/while]: https://github.com/stdlib-js/utils-async-while/tree/umd
+[@stdlib/utils/async/while]: https://github.com/stdlib-js/utils-async-while
 
-[@stdlib/utils/while-each]: https://github.com/stdlib-js/utils-while-each/tree/umd
+[@stdlib/utils/while-each]: https://github.com/stdlib-js/utils-while-each
 
 <!-- </related-links> -->
 
