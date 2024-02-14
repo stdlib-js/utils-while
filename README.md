@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import whilst from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-while@esm/index.mjs';
+import whilst from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-while@v0.2.0-esm/index.mjs';
 ```
 
 #### whilst( predicate, fcn\[, thisArg ] )
@@ -130,7 +130,7 @@ console.log( context.count );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import whilst from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-while@esm/index.mjs';
+import whilst from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-while@v0.2.0-esm/index.mjs';
 
 function predicate() {
     return ( randu() > 0.05 );
